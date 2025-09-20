@@ -1,0 +1,131 @@
+
+/* Main Quiz Container */
+.container {
+  width: 500px;
+  padding: 25px 30px;
+  margin-top: 20px;
+  border-radius: 15px;
+  background: #1f1f1f; /* Dark grey */
+  border: 1px solid #333;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.01);
+}
+
+.container h1 {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 0 0 5px rgba(0, 212, 255, 0.6);
+}
+
+.container h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #e0e0e0;
+}
+
+.container hr {
+  border: none;
+  border-top: 1px solid #444;
+  margin-bottom: 10px;
+}
+
+.container ul {
+  padding: 0;
+}
+
+.container ul li {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  list-style: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.container ul li:hover {
+  background: #3a3a3a;
+  transform: scale(1.02);
+}
+
+.container button {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 15px;
+  font-size: 18px;
+  margin: auto;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.4);
+}
+
+.container button:hover {
+  transform: scale(1.05);
+}
+
+.container .index {
+  font-size: 14px;
+  text-align: center;
+  color: #b0b0b0;
+}
+
+.container .correct {
+  background: rgba(0, 255, 170, 0.2);
+  border: 1px solid #00ffae;
+}
+
+.container .wrong {
+  background: rgba(255, 0, 0, 0.2);
+  border: 1px solid #ff4d4d;
+}
+
+/* Result Box */
+.resultbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #2a2a2a;
+  height: 300px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  gap: 15px;
+  color: #fff;
+}
+
+.resultbox p {
+  font-size: 28px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.resultbox button {
+  background: #0072ff;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.resultbox button:hover {
+  background: #0055cc;
+}
